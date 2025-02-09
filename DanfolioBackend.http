@@ -1,0 +1,6 @@
+@DanfolioBackend_HostAddress = http://localhost:5260
+
+GET {{DanfolioBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
