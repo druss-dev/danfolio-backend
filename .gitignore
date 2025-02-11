@@ -1,0 +1,63 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.DanfolioBackend.iml
+/modules.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Rider and IntelliJ IDE-specific files
+/.idea/
+/*.iml
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/assetWizardSettings.xml
+/.idea/dictionaries/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+
+# Build output
+/bin/
+/obj/
+*.dll
+*.pdb
+*.exe
+*.cache
+*.log
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet packages and related files
+packages/
+*.nupkg
+.nuget/
+project.assets.json
+project.nuget.cache
+*.nuspec
+
+# Logs and temporary files
+*.log
+/logs/
+temp/
+
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE and Rider files
+.idea/
+.idea/*
