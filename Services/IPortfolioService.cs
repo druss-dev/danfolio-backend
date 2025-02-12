@@ -4,8 +4,11 @@ namespace DanfolioBackend.Services;
 
 public interface IPortfolioService
 {
-    Task<IEnumerable<WorkHistory>> GetAllAsync();
-    Task<WorkHistory?> GetByIdAsync(int id);
-    Task<bool> UpdateAsync(WorkHistory workHistory);
-    Task<bool> DeleteAsync(int id);
+    List<WorkHistory> GetWorkHistory();
+    
+    // These are only used if we create a database
+    // Task<IEnumerable<WorkHistory>> GetAllAsync();
+    // Task<WorkHistory?> GetByIdAsync(int id);
+    // Task<bool> UpdateAsync(WorkHistory workHistory);
+    // Task<bool> DeleteAsync(int id);
 }

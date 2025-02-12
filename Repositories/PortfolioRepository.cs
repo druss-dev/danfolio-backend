@@ -1,3 +1,26 @@
+using DanfolioBackend.Models;
+using DanfolioBackend.Repositories;
+
+namespace DanfolioBackend.Repositories;
+
+public class PortfolioRepository : IPortfolioRepository
+{
+    private readonly List<WorkHistory> _workHistories;
+
+    public PortfolioRepository(List<WorkHistory> workHistories)
+    {
+        _workHistories = workHistories;
+    }
+
+    public List<WorkHistory> GetWorkHistory()
+    {
+        return _workHistories;
+    }
+}
+
+/*
+//Deprecated because Azure SQL cost more than free and this was more of an exercise than a necessity.
+
 using System.Data;
 using System.Data.SqlClient;
 using DanfolioBackend.Models;
@@ -87,3 +110,4 @@ public class PortfolioRepository : IPortfolioRepository
         return affectedRows > 0;
     }
 }
+*/

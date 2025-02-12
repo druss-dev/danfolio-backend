@@ -1,0 +1,56 @@
+[
+    {
+        "Id": 1,
+        "Company": "Tech Corp",
+        "JobTitle": "Software Engineer",
+        "Location": "Remote",
+        "BulletPoints": [
+            {
+                "Sentence": "Developed a microservices architecture using .NET and Azure."
+            },
+            {
+                "Sentence": "Optimized SQL queries, reducing execution time by 40%."
+            }
+        ],
+        "StartDate": "2020-06-01",
+        "EndDate": "2023-08-15",
+        "TechStacks": [
+            {
+                "Name": "C#"
+            },
+            {
+                "Name": "Azure"
+            },
+            {
+                "Name": "SQL Server"
+            }
+        ]
+    },
+    {
+        "Id": 2,
+        "Company": "InnovateX",
+        "JobTitle": "DevOps Engineer",
+        "Location": "Hybrid",
+        "BulletPoints": [
+            {
+                "Sentence": "Implemented CI/CD pipelines using Azure DevOps."
+            },
+            {
+                "Sentence": "Automated infrastructure provisioning with Terraform."
+            }
+        ],
+        "StartDate": "2023-09-01",
+        "EndDate": null,
+        "TechStacks": [
+            {
+                "Name": "Azure DevOps"
+            },
+            {
+                "Name": "Terraform"
+            },
+            {
+                "Name": "Docker"
+            }
+        ]
+    }
+]

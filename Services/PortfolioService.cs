@@ -1,5 +1,29 @@
 using DanfolioBackend.Models;
 using DanfolioBackend.Repositories;
+using DanfolioBackend.Services;
+
+namespace DanfolioBackend.Services;
+
+public class PortfolioService : IPortfolioService
+{
+    private readonly IPortfolioRepository _repository;
+
+    public PortfolioService(IPortfolioRepository repository)
+    {
+        _repository = repository;
+    }
+
+    public List<WorkHistory> GetWorkHistory()
+    {
+        return _repository.GetWorkHistory();
+    }
+}
+
+/*
+// The repository has been altered to no longer connect to an active db, so these are inactive for now
+
+using DanfolioBackend.Models;
+using DanfolioBackend.Repositories;
 
 namespace DanfolioBackend.Services;
 
@@ -32,3 +56,4 @@ public class PortfolioService : IPortfolioService
         return await _repository.DeleteAsync(id);
     }
 }
+*/

@@ -4,6 +4,33 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DanfolioBackend.Controllers;
 
+[Route("api/portfolio")]
+[ApiController]
+public class PortfolioController : ControllerBase
+{
+    private readonly IPortfolioService _service;
+
+    public PortfolioController(IPortfolioService service)
+    {
+        _service = service;
+    }
+
+    [HttpGet("workhistory")]
+    public ActionResult<List<WorkHistory>> GetWorkHistory()
+    {
+        return Ok(_service.GetWorkHistory());
+    }
+}
+
+/*
+// The repository has been altered to no longer connect to an active db, so these are inactive for now
+
+using DanfolioBackend.Models;
+using DanfolioBackend.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DanfolioBackend.Controllers;
+
 [ApiController]
 [Route("api/[controller]")]
 public class PortfolioController : ControllerBase
@@ -45,3 +72,4 @@ public class PortfolioController : ControllerBase
         return success ? NoContent() : NotFound();
     }
 }
+*/
