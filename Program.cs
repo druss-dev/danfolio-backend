@@ -6,7 +6,8 @@ builder.Services.AddDataRepositories();
 builder.AddLogging();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
-builder.Services.AddSwaggerGen();
+builder.AddJwtSwaggerGen();
+builder.AddJwtAuthentication();
 
 var app = builder.Build();
 
@@ -16,7 +17,7 @@ var app = builder.Build();
     app.UseSwaggerUI();
 //}
 
-app.UseHttpsRedirection();
-app.MapControllers();
-
-app.Run();
+    app.UseAuthentication();
+    app.UseAuthorization();
+    app.MapControllers();
+    app.Run();

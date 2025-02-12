@@ -1,11 +1,13 @@
 using DanfolioBackend.Models;
 using DanfolioBackend.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DanfolioBackend.Controllers;
 
-[Route("api/portfolio")]
+[Authorize]
 [ApiController]
+[Route("api/portfolio")]
 public class PortfolioController : ControllerBase
 {
     private readonly IPortfolioService _service;
